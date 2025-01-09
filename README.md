@@ -13,3 +13,4 @@ The aim of this project was to set up a home security lab equipped with a virtua
 
 <p style="color:DodgerBlue;">Lorem ipsum...</p>
 <p style="font-weight: bold; color: blue;">Install and configure VirtualBox</p>
+<span style="font-weight: bold; color: blue;">Install and configure VirtualBox</span>
