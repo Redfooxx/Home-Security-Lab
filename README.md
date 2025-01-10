@@ -32,5 +32,45 @@ This will start installing pfSense. Select the default values
 Click Start VM VirtualBox, this displays the menu below. Do the following at the Enter an option prompt: 2 then 2; enter the new LAN IPv4 address – 10.13.37.1; subnet bit count will be 24; don’t specify IPv4 upstream gateway address, press <ENTER>; disable IPv6; select Yest to enable DHCP server; start range for IPv4 client address range will be 10.13.37.100 to 10.13.37.200; click Yes to using HTTP as the protocol and press <ENTER> again.
 ![image](https://github.com/user-attachments/assets/fa3bf2a1-3d81-4019-8461-5943187042c3)
 
+# **Install and configure Kali Linux**
+Download and install the VirtualBox 64 bit version
+![image](https://github.com/user-attachments/assets/419cf587-7665-45f1-bc6d-3f1f3bb4dfa9)
+
+Click on Network
+
+![image](https://github.com/user-attachments/assets/ccdfa49b-8454-4138-83e1-c2218387b086)
+
+Attached to: Internal Network, which will be MyHackNetwork.
+![image](https://github.com/user-attachments/assets/2c910aa1-abc8-44f2-95e9-f76da2be548b)
+
+Click on Start Kali
+
+![image](https://github.com/user-attachments/assets/2e5de63c-04f5-4a25-a96a-969cda6e3675)
+
+Open browser and enter 10.13.37.1, which will open the control panel for pfSense. Disable RFC1918 Networks and Block bogon networks
+![image](https://github.com/user-attachments/assets/6f9d0311-9824-48f0-a62f-7d776a2166e2)
+
+Reload and the Dashboard below will be displayed
+![image](https://github.com/user-attachments/assets/fd7f322d-6ef2-4c61-b7a0-4e531119b7a3)
+
+# **Install and configure Metasploitable2**
+![image](https://github.com/user-attachments/assets/33f895e7-8e4c-4f46-a1da-df831032ee84)
+
+![image](https://github.com/user-attachments/assets/33a4c060-646b-4a08-be95-41233b21d561)
+
+Click on Adapter 1 and select the settings below and click OK.
+![image](https://github.com/user-attachments/assets/a2ec3647-cfe9-4199-b594-778981654ae6)
+
+
+# **Confirming connection between MS2 and Kali**
+In Kali, run nmap scan by entering nmap 10.13.37.*
+![image](https://github.com/user-attachments/assets/e69a710e-e045-41af-8348-abcb9490f9c7)
+
+While in Kali, use browser and enter 10.13.37.102 (the ip of MS2)
+![image](https://github.com/user-attachments/assets/c7e4064b-0505-4a1e-845e-0b0e2da8b301)
+
+
+
+
 
 
