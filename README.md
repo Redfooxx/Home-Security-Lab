@@ -1,19 +1,16 @@
 # Home-Security-Lab
 The aim of this project was to set up a home security lab equipped with a virtualized system running pfSense and Kali Linux, and to test the system using Metasploitable 2. The steps below were taken:
 
-•	Install and configure VirtualBox
-
-•	Install and configure pfSense	
-
-•	Install and configure Kali Linux
-
-•	Install and configure Metasploitable2
-
-•	Confirming connection between MS2 and Kali
-
-# **Install and configure VirtualBox**
+<details>
+  <summary><b>Install and configure VirtualBox</b></summary>
+  
 ![image](https://github.com/user-attachments/assets/6575376c-19e0-4c1d-82cb-dafb87c154c2)
-# **Install and configure pfSense**
+
+</details>
+
+<details>
+  <summary><b>Install and configure pfSense</b></summary>
+
 Insert name and configure system using Linux
 ![image](https://github.com/user-attachments/assets/388a78d8-c752-4d5f-a29e-7ce47f89f1d6)
 
@@ -31,8 +28,11 @@ This will start installing pfSense. Select the default values
 
 Click Start VM VirtualBox, this displays the menu below. Do the following at the Enter an option prompt: 2 then 2; enter the new LAN IPv4 address – 10.13.37.1; subnet bit count will be 24; don’t specify IPv4 upstream gateway address, press <ENTER>; disable IPv6; select Yest to enable DHCP server; start range for IPv4 client address range will be 10.13.37.100 to 10.13.37.200; click Yes to using HTTP as the protocol and press <ENTER> again.
 ![image](https://github.com/user-attachments/assets/fa3bf2a1-3d81-4019-8461-5943187042c3)
+</details>
 
-# **Install and configure Kali Linux**
+<details>
+  <summary><b>Install and configure Kali Linu</b></summary>
+
 Download and install the VirtualBox 64 bit version
 ![image](https://github.com/user-attachments/assets/419cf587-7665-45f1-bc6d-3f1f3bb4dfa9)
 
@@ -52,23 +52,28 @@ Open browser and enter 10.13.37.1, which will open the control panel for pfSense
 
 Reload and the Dashboard below will be displayed
 ![image](https://github.com/user-attachments/assets/fd7f322d-6ef2-4c61-b7a0-4e531119b7a3)
+</details>
 
-# **Install and configure Metasploitable2**
+<details>
+  <summary><b>Install and configure Metasploitable2</b></summary>
+
 ![image](https://github.com/user-attachments/assets/33f895e7-8e4c-4f46-a1da-df831032ee84)
 
 ![image](https://github.com/user-attachments/assets/33a4c060-646b-4a08-be95-41233b21d561)
 
 Click on Adapter 1 and select the settings below and click OK.
 ![image](https://github.com/user-attachments/assets/a2ec3647-cfe9-4199-b594-778981654ae6)
+</details>
 
+<details>
+  <summary><b>Confirming connection between MS2 and Kali</b></summary>
 
-# **Confirming connection between MS2 and Kali**
 In Kali, run nmap scan by entering nmap 10.13.37.*
 ![image](https://github.com/user-attachments/assets/e69a710e-e045-41af-8348-abcb9490f9c7)
 
 While in Kali, use browser and enter 10.13.37.102 (the ip of MS2)
 ![image](https://github.com/user-attachments/assets/c7e4064b-0505-4a1e-845e-0b0e2da8b301)
-
+</details>
 
 
 
